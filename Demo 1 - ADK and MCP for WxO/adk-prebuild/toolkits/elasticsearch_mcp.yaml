@@ -1,0 +1,14 @@
+spec_version: v1
+kind: mcp
+name: elasticsearch_mcp
+description: |
+  Elasticsearch MCP toolkit — provides tools to search indices, run ES|QL queries,
+  and inspect mappings via elastic/mcp-server-elasticsearch running on the workshop VM.
+transport: streamable_http
+url: http://52.118.190.184:8443/mcp
+tools:
+  - list_indices
+  - get_mappings
+  - search
+  - esql
+  - get_shards
